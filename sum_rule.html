@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Sum Rule</title>
+</head>
+<body>
+    <h1>Sum Rule</h1>
+    <p>Mary and Peter are planning to have no more than three children. What are the possible combinations of girls and boys they might end up with, if we aren't keeping track of the order of the children? (By not keeping track of the order of the children, I mean that we'll consider having two girls followed by one boy as being the same as having two girls and one boy in any other order.)
+<br/>
+<br/>
+        Solution
+        
+        To answer this question, we'll break the problem into cases. First we'll divide the problem into two possibilities: Mary and Peter have no children; or they have at least one child. If Mary and Peter have no children, this can happen in only one way (no boys and no girls). If Mary and Peter have at least one child, then they have between one and three children. We'll have to break this down further to find how many outcomes are involved.
+        
+        We break the case where Mary and Peter have between one and three children down into two cases: they might have one child, or they might have more than one child. If they have one child, that child might be a boy or a girl, so there are two possible outcomes. If they have more than one child, again we'll need to further subdivide this case.
+        
+        The case where Mary and Peter have either two or three children naturally breaks down into two cases: they might have two children, or they might have three children. If they have two children, the number of girls they have might be zero, one, or two, so there are three possible outcomes (the remaining children, if any, must all be boys). If they have three children, the number of girls they have might be zero, one, two, or three, so there are four possible outcomes (again, any remaining children must be boys).
+        
+        Now we put all of these outcomes together with the sum rule. We conclude that in total, there are  1+(2+(3+4))=10
+          different combinations of girls and boys that Mary and Peter might end up with.</p>
+</body>
+</html>
